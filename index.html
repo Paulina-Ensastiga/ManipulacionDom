@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./styles/main.css">
+    <script src="./styles/main.css" async defer></script>
+    <script src="./src/temporizador.js" async defer></script>
+    <script src="./src/calculadora.js" defer></script>
+
+</head>
+
+<body>
+<h2>Ejercicio 1</h2>
+<h4>Crea un programa utilizando HTML, CSS y JavaScript que permita al usuario acceder a un contador sencillo (ascendente y descendente) sin límite. Así mismo, se muestre un temporizador que permita al usuario establecer un tiempo (en segundos) y que haga una cuenta regresiva por cada segundo hasta llegar a 0 y arroje una alerta de tiempo finalizado.</h4>
+    <div id="container">
+    <button class="btn-count" id="btn-count">Sumar</button>
+    <p id="contador"></p>
+
+    <button class="btns-count" id="btns-count">Restar</button>
+        <br>
+        <br>
+    <p id="contador"></p>
+    </div>
+
+    <div id="temporizador">
+        <button id="btn-start" onclick="iniciarTemporizador()">Iniciar temporizador</button>
+        <br>
+        <p id="tiempoTranscurrido">0</p>
+      </div>
+
+      <hr>
+
+<h2> Ejercicio 2 </h2>
+<h4>Crea un programa utilizando HTML, CSS y JavaScript que solicite dos números al usuario y permita suma, restar, multiplicar o dividir dichos números y muestre el resultado.</h4>
+<br>
+
+<div class="numeros">
+    <label for="numero1">Inserte un número:</label>
+    <input type="number" id="numero1" />
+    <br>
+    <br>
+    <label for="numero2">Inserte otro número:</label>
+    <input type="number" id="numero2" />
+  </div>
+<p id="pregunta">¿Qué operación desea realizar?</p>
+
+  <div class="operaciones1">
+    <button onclick="sumar()" class="operaciones"id="sumar">+</button>
+    <button onclick="restar()" class="operaciones" id="restar">-</button>
+    <button onclick="multiplicar()" class="operaciones" id="multiplicar">x</button>
+    <button onclick="dividir()" class="operaciones" id="dividir">/</button>
+  </div>
+<br>
+
+  <p id="resultado"> = </p>
+
+<hr>
+</body>
+</html>
+
+
+  
+</body>
+</html>
